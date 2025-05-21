@@ -1,4 +1,3 @@
-
 import Foundation
 
 struct Tile {
@@ -11,7 +10,6 @@ struct Tile {
 struct Model {
     var tiles: [Tile] = []
     var score: Int = 0
-    
     mutating func generaterTiles() {
         let imageNames = ["1", "2", "3", "4", "5", "6", "7", "8"]
         let pairNames = (imageNames + imageNames).shuffled()
@@ -35,9 +33,8 @@ struct Model {
     mutating func markMatched(firstTag: Int, secondTag: Int) {
         var firstIndex: Int? = nil
         var secondIndex: Int? = nil
-        
         for (index, tile) in tiles.enumerated() {
-            guard firstIndex == nil || secondIndex == nil else { break } // как только оба индекса не нил, выходим из цикла
+            guard firstIndex == nil || secondIndex == nil else { break }
             if tile.tag == firstTag {
                 firstIndex = index
             }

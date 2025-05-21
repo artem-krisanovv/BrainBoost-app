@@ -1,4 +1,3 @@
-
 import UIKit
 
 class ViewController: UIViewController {
@@ -20,6 +19,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         startUI()
+        
     }
     
     @IBAction func segmentChange(_ sender: UISegmentedControl) {
@@ -48,7 +48,7 @@ class ViewController: UIViewController {
             stopButton.setTitle("Stop", for: .normal)
             unPauseTimer()
             for button in tileButtons {
-                if buttonImage[button.tag].image == nil { // делаем доступными только те кнопки, пара которых не найдена
+                if buttonImage[button.tag].image == nil {
                     button.isEnabled = true
                 }
             }
@@ -59,7 +59,7 @@ class ViewController: UIViewController {
         startTimer()
         game.generaterTiles()
         allButtonActivate(bool: true)
-        startUI()
+        startSettings()
     }
     
     @IBAction func buttonPressed(_ sender: UIButton) {
@@ -67,14 +67,13 @@ class ViewController: UIViewController {
         var tileImageView: UIImageView = UIImageView()
         for view in buttonImage {
             if view.tag == tag {
-                tileImageView = view // как только находим карточку схожую по тегу, передаём в переменную значение верной карточки
+                tileImageView = view
                 break
             }
         }
-        guard let correctTile = game.returnTile(tag: tag), !correctTile.isChoiceMatches else { return } // ! необходим чтобы перекрыть те карточки, пара которых найдена,при true мы просто выходим
+        guard let correctTile = game.returnTile(tag: tag), !correctTile.isChoiceMatches else { return }
         tileImageView.image = UIImage(named: correctTile.imagesNumber)
         sender.isEnabled = false
-        
         if let first = tagOfFirstButton {
             if let firstTile = game.returnTile(tag: first), firstTile.imagesNumber == correctTile.imagesNumber {
                 game.markMatched(firstTag: first, secondTag: tag)
@@ -125,16 +124,8 @@ class ViewController: UIViewController {
         progressView.transform = CGAffineTransform(scaleX: 1.0, y: 2.0)
         progressView.layer.borderWidth = 0.66
         progressView.layer.borderColor = UIColor.white.cgColor
-        progressView.progress = 1.0
-        pointsLabel.text = "0"
-        tagOfFirstButton = nil
-        stopButton.setTitle("Stop", for: .normal)
-        timerLabel.text = "Time:    \(timeLeft) seconds"
-        game.score = 0
-        for imageView in buttonImage {
-            imageView.image = UIImage()
-            imageView.isUserInteractionEnabled = true
-        }
+        progressView.progress = 1
+        startSettings()
     }
     
     func startTimer() {
@@ -151,14 +142,10 @@ class ViewController: UIViewController {
             self.timeLeft -= 1
             self.progressView.progress = Float(self.timeLeft) / Float(total)
             self.timerLabel.text = "Time:    \(self.timeLeft) seconds"
-            
             if self.timeLeft <= 0 {
                 self.timer?.invalidate()
                 self.showEndAlert()
                 self.timerLabel.text = "You can try again"
-                for image in self.buttonImage {
-                    image.image = UIImage()
-                }
             }
         }
     }
@@ -185,6 +172,7 @@ class ViewController: UIViewController {
             if self.timeLeft <= 0 {
                 self.timer?.invalidate()
                 self.showEndAlert()
+                self.timerLabel.text = "You can try again"
             }
         }
     }
@@ -206,7 +194,8 @@ class ViewController: UIViewController {
         )
         alert.addAction(UIAlertAction(title: "Ок", style: .default))
         present(alert, animated: true)
-        startUI()
+        startSettings()
+        allButtonActivate(bool: false)
     }
     
     func allButtonActivate(bool: Bool) {
@@ -223,6 +212,21 @@ class ViewController: UIViewController {
             }
         }
     }
+    func startSettings() {
+        pointsLabel.text = "0"
+        tagOfFirstButton = nil
+        stopButton.setTitle("Stop", for: .normal)
+        timerLabel.text = "Time:    \(timeLeft) seconds"
+        game.score = 0
+        progressView.setProgress(1, animated: true)
+        for imageView in buttonImage {
+            imageView.image = UIImage()
+            imageView.isUserInteractionEnabled = true
+        }
+    }
 }
+
+
+
 
 

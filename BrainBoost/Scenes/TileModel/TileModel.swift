@@ -1,10 +1,9 @@
-import Foundation
+import UIKit
 
 struct Tile {
     let tag: Int
     let imagesNumber: String
     var isChoiceMatches: Bool
-    
 }
 
 struct Model {
@@ -30,22 +29,16 @@ struct Model {
         return nil
     }
     
-    mutating func markMatched(firstTag: Int, secondTag: Int) {
-        var firstIndex: Int? = nil
-        var secondIndex: Int? = nil
-        for (index, tile) in tiles.enumerated() {
-            guard firstIndex == nil || secondIndex == nil else { break }
-            if tile.tag == firstTag {
-                firstIndex = index
-            }
-            if tile.tag == secondTag {
-                secondIndex = index
-            }
-        }
-        if let firstIndex = firstIndex, let secondIndex = secondIndex {
-            tiles[firstIndex].isChoiceMatches = true
-            tiles[secondIndex].isChoiceMatches = true
-            score += 1
+    func getSegmentValue(index: Int) -> Int {
+        switch index {
+        case 0:
+            return 30
+        case 1:
+            return 20
+        case 2:
+            return 15
+        default:
+            return 30
         }
     }
 }

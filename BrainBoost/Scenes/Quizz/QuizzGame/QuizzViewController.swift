@@ -62,7 +62,12 @@ class QuizzViewController: UIViewController {
         progressView.layer.borderWidth = 0.88
         progressView.layer.borderColor = UIColor.white.cgColor
         imageForQuestion.layer.borderWidth = 1
-        imageForQuestion.layer.borderColor = UIColor(red: 0.46, green: 0.28, blue: 1, alpha: 1).cgColor
+        imageForQuestion.layer.borderColor = UIColor(
+            red: 0.46,
+            green: 0.28,
+            blue: 1,
+            alpha: 1
+        ).cgColor
         firstButton.layer.borderWidth = 0.88
         firstButton.layer.borderColor = UIColor.white.cgColor
         secondButton.layer.borderWidth = 0.88

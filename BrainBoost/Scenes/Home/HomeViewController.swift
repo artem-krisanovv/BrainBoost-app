@@ -6,7 +6,4 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         view.addGradient()
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    }
 }

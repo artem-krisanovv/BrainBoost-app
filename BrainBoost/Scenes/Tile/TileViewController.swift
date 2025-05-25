@@ -28,7 +28,6 @@ class TileViewController: UIViewController {
     @IBAction func segmentChange(_ sender: UISegmentedControl) {
         timeLeft = game.getSegmentValue(index: sender.selectedSegmentIndex)
         timerLabel.text = "Time:    \(timeLeft) seconds"
-        
     }
     
     @IBAction func stopButtonPressed(_ sender: UIButton) {
@@ -65,7 +64,17 @@ class TileViewController: UIViewController {
             }
         }
         guard let correctTile = game.returnTile(tag: tag), !correctTile.isChoiceMatches else { return }
-        tileImageView.image = UIImage(named: correctTile.imagesNumber)
+        UIView.transition(
+            with: tileImageView,
+            duration: 0.55,
+            options: .transitionFlipFromLeft,
+            animations: {
+                tileImageView.image = UIImage(
+                    named: correctTile.imagesNumber
+                )
+                tileImageView.backgroundColor = .clear
+            },
+            completion: nil)
         sender.isEnabled = false
         if let first = tagOfFirstButton {
             if let firstTile = game.returnTile(tag: first), firstTile.imagesNumber == correctTile.imagesNumber {
@@ -73,9 +82,9 @@ class TileViewController: UIViewController {
                 tagOfFirstButton = nil
                 pointsLabel.text = "\(game.score)"
             } else {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
-                    self.hideImageView(tag: tag)
-                    self.hideImageView(tag: first)
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.88) {
+                    self.flipBack(tag: tag)
+                    self.flipBack(tag: first)
                     self.oneButtonActivate(tag: tag)
                     self.oneButtonActivate(tag: first)
                 }
@@ -209,8 +218,32 @@ class TileViewController: UIViewController {
         game.score = 0
         progressView.setProgress(1, animated: true)
         for imageView in buttonImage {
+            imageView.backgroundColor = UIColor(
+                red: 0.667,
+                green: 0.553,
+                blue: 1,
+                alpha: 1
+            )
             imageView.image = UIImage()
             imageView.isUserInteractionEnabled = true
+        }
+    }
+    
+    func flipBack(tag: Int) {
+        for view in buttonImage {
+            if view.tag == tag {
+                UIView.transition(with: view, duration: 0.66, options: .transitionFlipFromRight, animations: {
+                        view.image = nil
+                        view.backgroundColor = UIColor(
+                            red: 0.667,
+                            green: 0.553,
+                            blue: 1,
+                            alpha: 1
+                        )
+                    },
+                    completion: nil)
+                break
+            }
         }
     }
 }

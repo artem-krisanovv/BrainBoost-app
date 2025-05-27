@@ -1,0 +1,9 @@
+xcuserdata/
+.DS_Store
+# Packages/
+# Package.pins
+# Package.resolved
+# *.xcodeproj
+.build/
+xcuserdata/
+xcshareddata/

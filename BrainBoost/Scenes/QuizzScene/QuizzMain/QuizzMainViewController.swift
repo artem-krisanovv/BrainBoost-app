@@ -2,6 +2,7 @@ import UIKit
 
 class QuizzMainViewController: UIViewController {
 
+    @IBOutlet weak var tabItem: UITabBarItem!
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addGradient()

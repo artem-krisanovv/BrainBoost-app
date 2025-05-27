@@ -6,6 +6,28 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CEC24A142DE60D9700D5C388 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC249F92DE60D9700D5C388 /* AppDelegate.swift */; };
+		CEC24A152DE60D9700D5C388 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC249FA2DE60D9700D5C388 /* SceneDelegate.swift */; };
+		CEC24A162DE60D9700D5C388 /* Extension+UIview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC249FD2DE60D9700D5C388 /* Extension+UIview.swift */; };
+		CEC24A172DE60D9700D5C388 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC249FF2DE60D9700D5C388 /* TabBarController.swift */; };
+		CEC24A182DE60D9700D5C388 /* QuizzBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC24A012DE60D9700D5C388 /* QuizzBrain.swift */; };
+		CEC24A192DE60D9700D5C388 /* QuizzModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC24A022DE60D9700D5C388 /* QuizzModel.swift */; };
+		CEC24A1A2DE60D9700D5C388 /* QuizzViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC24A032DE60D9700D5C388 /* QuizzViewController.swift */; };
+		CEC24A1B2DE60D9700D5C388 /* QuizzMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC24A052DE60D9700D5C388 /* QuizzMainViewController.swift */; };
+		CEC24A1C2DE60D9700D5C388 /* TileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC24A082DE60D9700D5C388 /* TileModel.swift */; };
+		CEC24A1D2DE60D9700D5C388 /* TileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC24A092DE60D9700D5C388 /* TileViewController.swift */; };
+		CEC24A1E2DE60D9700D5C388 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC249FC2DE60D9700D5C388 /* Assets.xcassets */; };
+		CEC24A1F2DE60D9700D5C388 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC24A0D2DE60D9700D5C388 /* LaunchScreen.storyboard */; };
+		CEC24A212DE60D9700D5C388 /* QuizzStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC24A0F2DE60D9700D5C388 /* QuizzStoryboard.storyboard */; };
+		CEC24A222DE60D9700D5C388 /* TileStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC24A102DE60D9700D5C388 /* TileStoryboard.storyboard */; };
+		CEC24A272DE612B100D5C388 /* LoginScene.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC24A262DE612B100D5C388 /* LoginScene.storyboard */; };
+		CEC24A292DE612D600D5C388 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC24A282DE612D600D5C388 /* LoginViewController.swift */; };
+		CEC24A2C2DE6146F00D5C388 /* HomeScene.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC24A2B2DE6146F00D5C388 /* HomeScene.storyboard */; };
+		CEC24A2E2DE6148500D5C388 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC24A2D2DE6148500D5C388 /* HomeViewController.swift */; };
+		CEC24A312DE63D7A00D5C388 /* TabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC24A302DE63D7A00D5C388 /* TabBarController.storyboard */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		CC8D8F932DD3AFF300514E8E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,27 +49,29 @@
 		CC8D8F7C2DD3AFF200514E8E /* BrainBoost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrainBoost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC8D8F922DD3AFF300514E8E /* BrainBoostTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrainBoostTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC8D8F9C2DD3AFF300514E8E /* BrainBoostUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrainBoostUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC249F92DE60D9700D5C388 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEC249FA2DE60D9700D5C388 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CEC249FC2DE60D9700D5C388 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEC249FD2DE60D9700D5C388 /* Extension+UIview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIview.swift"; sourceTree = "<group>"; };
+		CEC249FF2DE60D9700D5C388 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		CEC24A012DE60D9700D5C388 /* QuizzBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzBrain.swift; sourceTree = "<group>"; };
+		CEC24A022DE60D9700D5C388 /* QuizzModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzModel.swift; sourceTree = "<group>"; };
+		CEC24A032DE60D9700D5C388 /* QuizzViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzViewController.swift; sourceTree = "<group>"; };
+		CEC24A052DE60D9700D5C388 /* QuizzMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzMainViewController.swift; sourceTree = "<group>"; };
+		CEC24A082DE60D9700D5C388 /* TileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileModel.swift; sourceTree = "<group>"; };
+		CEC24A092DE60D9700D5C388 /* TileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileViewController.swift; sourceTree = "<group>"; };
+		CEC24A0C2DE60D9700D5C388 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEC24A0F2DE60D9700D5C388 /* QuizzStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuizzStoryboard.storyboard; sourceTree = "<group>"; };
+		CEC24A102DE60D9700D5C388 /* TileStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TileStoryboard.storyboard; sourceTree = "<group>"; };
+		CEC24A122DE60D9700D5C388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC24A262DE612B100D5C388 /* LoginScene.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScene.storyboard; sourceTree = "<group>"; };
+		CEC24A282DE612D600D5C388 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CEC24A2B2DE6146F00D5C388 /* HomeScene.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeScene.storyboard; sourceTree = "<group>"; };
+		CEC24A2D2DE6148500D5C388 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CEC24A302DE63D7A00D5C388 /* TabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		CC8D8FA42DD3AFF300514E8E /* Exceptions for "BrainBoost" folder in "BrainBoost" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = CC8D8F7B2DD3AFF200514E8E /* BrainBoost */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		CC8D8F7E2DD3AFF200514E8E /* BrainBoost */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				CC8D8FA42DD3AFF300514E8E /* Exceptions for "BrainBoost" folder in "BrainBoost" target */,
-			);
-			path = BrainBoost;
-			sourceTree = "<group>";
-		};
 		CC8D8F952DD3AFF300514E8E /* BrainBoostTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = BrainBoostTests;
@@ -88,7 +112,7 @@
 		CC8D8F732DD3AFF200514E8E = {
 			isa = PBXGroup;
 			children = (
-				CC8D8F7E2DD3AFF200514E8E /* BrainBoost */,
+				CEC24A132DE60D9700D5C388 /* BrainBoost */,
 				CC8D8F952DD3AFF300514E8E /* BrainBoostTests */,
 				CC8D8F9F2DD3AFF300514E8E /* BrainBoostUITests */,
 				CC8D8F7D2DD3AFF200514E8E /* Products */,
@@ -105,6 +129,129 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		CEC249FB2DE60D9700D5C388 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CEC249F92DE60D9700D5C388 /* AppDelegate.swift */,
+				CEC249FA2DE60D9700D5C388 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CEC249FE2DE60D9700D5C388 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CEC249FC2DE60D9700D5C388 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CEC24A042DE60D9700D5C388 /* QuizzGame */ = {
+			isa = PBXGroup;
+			children = (
+				CEC24A012DE60D9700D5C388 /* QuizzBrain.swift */,
+				CEC24A022DE60D9700D5C388 /* QuizzModel.swift */,
+				CEC24A032DE60D9700D5C388 /* QuizzViewController.swift */,
+			);
+			path = QuizzGame;
+			sourceTree = "<group>";
+		};
+		CEC24A062DE60D9700D5C388 /* QuizzMain */ = {
+			isa = PBXGroup;
+			children = (
+				CEC24A052DE60D9700D5C388 /* QuizzMainViewController.swift */,
+			);
+			path = QuizzMain;
+			sourceTree = "<group>";
+		};
+		CEC24A072DE60D9700D5C388 /* QuizzScene */ = {
+			isa = PBXGroup;
+			children = (
+				CEC24A0F2DE60D9700D5C388 /* QuizzStoryboard.storyboard */,
+				CEC24A042DE60D9700D5C388 /* QuizzGame */,
+				CEC24A062DE60D9700D5C388 /* QuizzMain */,
+			);
+			path = QuizzScene;
+			sourceTree = "<group>";
+		};
+		CEC24A0A2DE60D9700D5C388 /* TileScene */ = {
+			isa = PBXGroup;
+			children = (
+				CEC24A102DE60D9700D5C388 /* TileStoryboard.storyboard */,
+				CEC24A092DE60D9700D5C388 /* TileViewController.swift */,
+				CEC24A082DE60D9700D5C388 /* TileModel.swift */,
+			);
+			path = TileScene;
+			sourceTree = "<group>";
+		};
+		CEC24A0B2DE60D9700D5C388 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				CEC24A252DE6126600D5C388 /* LoginScene */,
+				CEC24A2F2DE63D4A00D5C388 /* TabBarController */,
+				CEC24A2A2DE6145400D5C388 /* HomeScene */,
+				CEC24A072DE60D9700D5C388 /* QuizzScene */,
+				CEC24A0A2DE60D9700D5C388 /* TileScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		CEC24A112DE60D9700D5C388 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CEC24A0D2DE60D9700D5C388 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CEC24A132DE60D9700D5C388 /* BrainBoost */ = {
+			isa = PBXGroup;
+			children = (
+				CEC24A242DE60DED00D5C388 /* Extensions */,
+				CEC249FB2DE60D9700D5C388 /* App */,
+				CEC249FE2DE60D9700D5C388 /* Resources */,
+				CEC24A0B2DE60D9700D5C388 /* Scenes */,
+				CEC24A112DE60D9700D5C388 /* Storyboards */,
+				CEC24A122DE60D9700D5C388 /* Info.plist */,
+			);
+			path = BrainBoost;
+			sourceTree = "<group>";
+		};
+		CEC24A242DE60DED00D5C388 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CEC249FD2DE60D9700D5C388 /* Extension+UIview.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CEC24A252DE6126600D5C388 /* LoginScene */ = {
+			isa = PBXGroup;
+			children = (
+				CEC24A262DE612B100D5C388 /* LoginScene.storyboard */,
+				CEC24A282DE612D600D5C388 /* LoginViewController.swift */,
+			);
+			path = LoginScene;
+			sourceTree = "<group>";
+		};
+		CEC24A2A2DE6145400D5C388 /* HomeScene */ = {
+			isa = PBXGroup;
+			children = (
+				CEC24A2B2DE6146F00D5C388 /* HomeScene.storyboard */,
+				CEC24A2D2DE6148500D5C388 /* HomeViewController.swift */,
+			);
+			path = HomeScene;
+			sourceTree = "<group>";
+		};
+		CEC24A2F2DE63D4A00D5C388 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				CEC24A302DE63D7A00D5C388 /* TabBarController.storyboard */,
+				CEC249FF2DE60D9700D5C388 /* TabBarController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +266,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				CC8D8F7E2DD3AFF200514E8E /* BrainBoost */,
 			);
 			name = BrainBoost;
 			packageProductDependencies = (
@@ -225,6 +369,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC24A312DE63D7A00D5C388 /* TabBarController.storyboard in Resources */,
+				CEC24A1E2DE60D9700D5C388 /* Assets.xcassets in Resources */,
+				CEC24A1F2DE60D9700D5C388 /* LaunchScreen.storyboard in Resources */,
+				CEC24A212DE60D9700D5C388 /* QuizzStoryboard.storyboard in Resources */,
+				CEC24A2C2DE6146F00D5C388 /* HomeScene.storyboard in Resources */,
+				CEC24A222DE60D9700D5C388 /* TileStoryboard.storyboard in Resources */,
+				CEC24A272DE612B100D5C388 /* LoginScene.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +400,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC24A142DE60D9700D5C388 /* AppDelegate.swift in Sources */,
+				CEC24A152DE60D9700D5C388 /* SceneDelegate.swift in Sources */,
+				CEC24A162DE60D9700D5C388 /* Extension+UIview.swift in Sources */,
+				CEC24A172DE60D9700D5C388 /* TabBarController.swift in Sources */,
+				CEC24A182DE60D9700D5C388 /* QuizzBrain.swift in Sources */,
+				CEC24A192DE60D9700D5C388 /* QuizzModel.swift in Sources */,
+				CEC24A1A2DE60D9700D5C388 /* QuizzViewController.swift in Sources */,
+				CEC24A1B2DE60D9700D5C388 /* QuizzMainViewController.swift in Sources */,
+				CEC24A1C2DE60D9700D5C388 /* TileModel.swift in Sources */,
+				CEC24A1D2DE60D9700D5C388 /* TileViewController.swift in Sources */,
+				CEC24A292DE612D600D5C388 /* LoginViewController.swift in Sources */,
+				CEC24A2E2DE6148500D5C388 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,22 +444,35 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		CEC24A0D2DE60D9700D5C388 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEC24A0C2DE60D9700D5C388 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		CC8D8FA62DD3AFF300514E8E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3ZKD67JWT9;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BrainBoost/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = LoginScene;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,9 +480,14 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "-.BrainBoost";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,16 +496,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3ZKD67JWT9;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BrainBoost/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = LoginScene;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,9 +515,14 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "-.BrainBoost";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

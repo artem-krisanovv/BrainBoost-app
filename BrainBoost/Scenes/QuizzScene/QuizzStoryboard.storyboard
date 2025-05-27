@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WId-Y4-psa">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Quizz Main View Controller-->
+        <!--QuizzStoryBoard-->
         <scene sceneID="eTK-aN-kxd">
             <objects>
-                <viewController storyboardIdentifier="QuizzStoryBoard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WId-Y4-psa" customClass="QuizzMainViewController" customModule="BrainBoost" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Quizz" title="QuizzStoryBoard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WId-Y4-psa" customClass="QuizzMainViewController" customModule="BrainBoost" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A6o-Av-jje">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -102,7 +102,6 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="backToMainButtonPressed:" destination="WId-Y4-psa" eventType="touchUpInside" id="YHK-PU-PcZ"/>
-                                                    <segue destination="67r-Ea-fte" kind="presentation" modalPresentationStyle="fullScreen" id="l7p-6N-lCJ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucm-FS-rz1">
@@ -124,7 +123,7 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <segue destination="IUA-fn-hsL" kind="presentation" id="LjG-yM-txY"/>
+                                                    <segue destination="IUA-fn-hsL" kind="show" id="LjG-yM-txY"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -139,18 +138,15 @@
                             <constraint firstItem="Wcq-C0-yfM" firstAttribute="top" secondItem="A6o-Av-jje" secondAttribute="top" constant="140" id="kOC-Rh-5XW"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="questionmark.square.dashed" catalog="system" selectedImage="questionmark.square.fill" id="Ug7-VD-sm1"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tabItem" destination="Ug7-VD-sm1" id="VHA-iB-QW4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mdx-dt-adu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1174.6268656716418" y="335.01144164759722"/>
-        </scene>
-        <!--Main-->
-        <scene sceneID="V7i-V7-Eck">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="Main" id="67r-Ea-fte" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iJq-UH-gT5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1185" y="762"/>
         </scene>
         <!--Quizz View Controller-->
         <scene sceneID="xfP-kq-PU0">
@@ -334,6 +330,7 @@
                             <constraint firstItem="Qk7-ne-E2r" firstAttribute="top" secondItem="Dg8-G6-JTV" secondAttribute="topMargin" constant="64" id="FD8-q6-4d2"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="fP5-d3-8NJ"/>
                     <connections>
                         <outlet property="firstButton" destination="de1-mq-Dyk" id="BQt-Bi-wHy"/>
                         <outlet property="imageForQuestion" destination="cas-oM-Yxx" id="vGO-By-SNf"/>
@@ -346,13 +343,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OCf-bC-VLm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1902.9850746268655" y="333.63844393592677"/>
+            <point key="canvasLocation" x="2047" y="335"/>
         </scene>
     </scenes>
     <resources>
         <image name="chevron.backward" catalog="system" width="97" height="128"/>
         <image name="imageForQuizVC" width="1280" height="878"/>
         <image name="questionImage" width="1022" height="1280"/>
+        <image name="questionmark.square.dashed" catalog="system" width="128" height="114"/>
+        <image name="questionmark.square.fill" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

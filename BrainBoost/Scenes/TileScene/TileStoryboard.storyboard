@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="775-4l-fl1">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
@@ -8,18 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main-->
-        <scene sceneID="3hk-ic-429">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="Main" id="goT-me-pKn" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7EN-ZG-NqK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="746" y="241"/>
-        </scene>
-        <!--Tile View Controller-->
+        <!--TileViewController-->
         <scene sceneID="coc-y0-VDy">
             <objects>
-                <viewController storyboardIdentifier="TileStoryBoard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="775-4l-fl1" customClass="TileViewController" customModule="BrainBoost" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TileStoryBoard" title="TileViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="775-4l-fl1" customClass="TileViewController" customModule="BrainBoost" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FbU-ED-5H2">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -472,7 +464,6 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="backToMainButtonPressed:" destination="775-4l-fl1" eventType="touchUpInside" id="r3S-xa-8RR"/>
-                                                    <segue destination="goT-me-pKn" kind="presentation" modalPresentationStyle="fullScreen" id="aWC-de-WWY"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Efq-SV-E1S">
@@ -792,7 +783,10 @@
                             <constraint firstItem="Vht-fE-bWa" firstAttribute="top" secondItem="MjU-32-smZ" secondAttribute="top" constant="56" id="lya-pZ-rWm"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Tail" image="brain" catalog="system" selectedImage="brain.fill" id="Puf-Ja-RXf"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="Item" destination="Puf-Ja-RXf" id="J1l-Zz-Ofn"/>
                         <outlet property="difficultySegment" destination="l4h-f7-jen" id="4jy-nB-dHt"/>
                         <outlet property="pointsLabel" destination="iuU-Rl-PWT" id="w2N-bs-Jjp"/>
                         <outlet property="progressView" destination="TmW-rY-BCG" id="fD9-e7-P4r"/>
@@ -838,6 +832,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="brain" catalog="system" width="128" height="107"/>
+        <image name="brain.fill" catalog="system" width="128" height="107"/>
         <image name="chevron.backward" catalog="system" width="97" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -10,6 +10,7 @@ class TileViewController: UIViewController {
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var pointsLabel: UILabel!
     
+    @IBOutlet weak var Item: UITabBarItem!
     var game = Model()
     var tagOfFirstButton: Int? = nil
     var timer: Timer?

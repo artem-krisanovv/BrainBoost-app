@@ -1,0 +1,19 @@
+# Кэш Xcode и сборка
+DerivedData/
+build/
+*.xcworkspace
+
+# Симуляторы и временные файлы
+xcuserdata/
+*.xcuserstate
+*.swp
+
+# Логи и отчеты
+*.log
+*.xcdebugger/
+*.xccheckout
+
+# Файлы, специфичные для локального проекта
+*.DS_Store
+.idea/
+.vscode/

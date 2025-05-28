@@ -13,6 +13,10 @@ final class Router: SegueRouterProtocol {
         self.viewController = viewController
     }
 
+//  Для использования добавить в контроллер:
+//  lazy var router: SegueRouterProtocol = SegueRouter(source: self)
+//  В экшене прописать func route(with segueIdentifier: .home, sender: self)
+
     func route(with segueIdentifier: SegueIdentifier, sender: Any?) {
         guard let sourceViewController = viewController else { return }
         sourceViewController.performSegue(withIdentifier: segueIdentifier.identifier, sender: sender)
@@ -39,6 +43,7 @@ final class Router: SegueRouterProtocol {
     }
 }
 
+// Если создали новый экран, добавляете новый кейс и его идентификатор
 enum SegueIdentifier {
     case home
     case tile

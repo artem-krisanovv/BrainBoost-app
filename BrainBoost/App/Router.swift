@@ -30,21 +30,24 @@ final class Router: SegueRouterProtocol {
                     
                     guard let homeScene = data as? HomeViewController else { return }
                     // TODO: Сюда вписать данные которые передаем
+                    print("Home")
                 }
             case .tile:
                 if let tileVC = segue.destination as? TileViewController {
                     // TODO: Сюда вписать данные которые передаем
+                    print("Tile")
                 }
             case .quize:
                 if let quizeVC = segue.destination as? QuizzMainViewController {
                     // TODO: Сюда вписать данные которые передаем
+                    print("Quize")
                 }
         }
     }
 }
 
 // Если создали новый экран, добавляете новый кейс и его идентификатор
-enum SegueIdentifier {
+enum SegueIdentifier: CaseIterable {
     case home
     case tile
     case quize
@@ -54,6 +57,14 @@ enum SegueIdentifier {
             case .home:  "HomeScene"
             case .tile:  "TileStoryBoard"
             case .quize: "Quizz"
+        }
+    }
+
+    var controllers: UIViewController {
+        switch self {
+            case .home: HomeViewController()
+            case .tile: TileViewController()
+            case .quize: QuizzMainViewController()
         }
     }
 }

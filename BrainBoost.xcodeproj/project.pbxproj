@@ -32,6 +32,9 @@
 		CEC24A4D2DE75FCE00D5C388 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEC24A472DE75FCE00D5C388 /* Poppins-Medium.ttf */; };
 		CEC24A4F2DE7616600D5C388 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC24A4E2DE7616100D5C388 /* Font.swift */; };
 		CEC24A522DE7699000D5C388 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC24A512DE7698E00D5C388 /* Router.swift */; };
+		CEC24A542DE77AEB00D5C388 /* RootTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC24A532DE77AE300D5C388 /* RootTabBarView.swift */; };
+		CEC24A562DE77B2200D5C388 /* RootTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC24A552DE77B1C00D5C388 /* RootTabBarItem.swift */; };
+		CEC24A752DE79D4D00D5C388 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC24A742DE79D4800D5C388 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +84,9 @@
 		CEC24A492DE75FCE00D5C388 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		CEC24A4E2DE7616100D5C388 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		CEC24A512DE7698E00D5C388 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		CEC24A532DE77AE300D5C388 /* RootTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarView.swift; sourceTree = "<group>"; };
+		CEC24A552DE77B1C00D5C388 /* RootTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarItem.swift; sourceTree = "<group>"; };
+		CEC24A742DE79D4800D5C388 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -147,6 +153,7 @@
 				CEC249F92DE60D9700D5C388 /* AppDelegate.swift */,
 				CEC249FA2DE60D9700D5C388 /* SceneDelegate.swift */,
 				CEC24A512DE7698E00D5C388 /* Router.swift */,
+				CEC24A742DE79D4800D5C388 /* Constants.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -262,6 +269,8 @@
 			children = (
 				CEC24A302DE63D7A00D5C388 /* TabBarController.storyboard */,
 				CEC249FF2DE60D9700D5C388 /* TabBarController.swift */,
+				CEC24A532DE77AE300D5C388 /* RootTabBarView.swift */,
+				CEC24A552DE77B1C00D5C388 /* RootTabBarItem.swift */,
 			);
 			path = TabBarController;
 			sourceTree = "<group>";
@@ -447,6 +456,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEC24A142DE60D9700D5C388 /* AppDelegate.swift in Sources */,
+				CEC24A752DE79D4D00D5C388 /* Constants.swift in Sources */,
 				CEC24A152DE60D9700D5C388 /* SceneDelegate.swift in Sources */,
 				CEC24A162DE60D9700D5C388 /* Extension+UIview.swift in Sources */,
 				CEC24A172DE60D9700D5C388 /* TabBarController.swift in Sources */,
@@ -457,8 +467,10 @@
 				CEC24A1B2DE60D9700D5C388 /* QuizzMainViewController.swift in Sources */,
 				CEC24A1C2DE60D9700D5C388 /* TileModel.swift in Sources */,
 				CEC24A522DE7699000D5C388 /* Router.swift in Sources */,
+				CEC24A542DE77AEB00D5C388 /* RootTabBarView.swift in Sources */,
 				CEC24A1D2DE60D9700D5C388 /* TileViewController.swift in Sources */,
 				CEC24A292DE612D600D5C388 /* LoginViewController.swift in Sources */,
+				CEC24A562DE77B2200D5C388 /* RootTabBarItem.swift in Sources */,
 				CEC24A2E2DE6148500D5C388 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
